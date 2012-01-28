@@ -29,4 +29,5 @@ instance Monad IO where
 putString : String -> IO ()
 putString s =
     mkForeign (FFun "putStr" [FString] FUnit) x
+
 -}
